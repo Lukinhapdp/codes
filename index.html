@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/1200x400/?nature,water" class="d-block w-100" alt="Natureza">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1200x400/?mountains,forest" class="d-block w-100" alt="Montanhas">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1200x400/?city,night" class="d-block w-100" alt="Cidade">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/300x200/?technology" class="card-img-top" alt="Tecnologia">
+                    <div class="card-body">
+                        <h5 class="card-title">Tecnologia</h5>
+                        <p class="card-text">Descrição breve sobre tecnologia.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalExemplo">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/300x200/?travel" class="card-img-top" alt="Viagem">
+                    <div class="card-body">
+                        <h5 class="card-title">Viagem</h5>
+                        <p class="card-text">Descrição breve sobre viagens.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalExemplo">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/300x200/?food" class="card-img-top" alt="Comida">
+                    <div class="card-body">
+                        <h5 class="card-title">Comida</h5>
+                        <p class="card-text">Descrição breve sobre culinária.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalExemplo">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="modalExemplo" tabindex="-1" aria-labelledby="modalExemploLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalExemploLabel">Informação</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Mais detalhes sobre o conteúdo do card.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-5" id="contato">
+        <h2>Contato</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">E-mail</label>
+                <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mensagem</label>
+                <textarea class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
